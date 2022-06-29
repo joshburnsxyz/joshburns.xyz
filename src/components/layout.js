@@ -40,9 +40,9 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          © {new Date().getFullYear()} &middot;
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          Josh Burns, Open sourced under The BSD Zero Clause License (0BSD).
         </footer>
       </div>
     </>

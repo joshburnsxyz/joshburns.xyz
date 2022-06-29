@@ -18,6 +18,12 @@ const links = [
     description:
       "I randomly post code / tech related videos on Odysee.",
   },
+  {
+    text: "Blog",
+    url: "/blog",
+    description:
+      "I also try to maintain a blog, usually focusing on code and projects im working on.",
+  },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`

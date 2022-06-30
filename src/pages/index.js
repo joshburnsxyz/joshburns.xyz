@@ -24,6 +24,12 @@ const links = [
     description:
       "I also try to maintain a blog, usually focusing on code and projects im working on.",
   },
+  {
+    text: "Downloads",
+    url: "/downloads",
+    description:
+      "Public downloads page.",
+  },
 ]
 
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`

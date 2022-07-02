@@ -45,7 +45,7 @@ query {
             {
               data.allMdx.edges.map(e => (
                 <span>
-                  <p><a href="#">{e.node.frontmatter.title}</a></p>
+                  <p><a href="/">{e.node.frontmatter.title}</a></p>
                   <small>lorem</small>
                 </span>
               ))

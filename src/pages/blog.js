@@ -7,7 +7,7 @@ import * as styles from "../components/index.module.css"
 import { useStaticQuery, graphql } from "gatsby"
 
 const BlogPage = () => {
-const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
 query {
   allMdx {
     edges {
@@ -16,6 +16,7 @@ query {
         slug
         frontmatter {
           title
+          date
         }
       }
     }
@@ -38,16 +39,19 @@ query {
         />
         <h1>
           My Blog
-          <br/>
-          <br/>
-          <hr/>
-          <div className={styles.textCenter}>
+          <br />
+          <br />
+          <hr />
+          <div className={styles.blogContainer}>
             {
               data.allMdx.edges.map(e => (
-                <span>
-                  <p><a href="/">{e.node.frontmatter.title}</a></p>
-                  <small>lorem</small>
-                </span>
+                <>
+                  <a style={{textDecoration: 'none'}} key={e.node.id}>
+                    <p><a href="/">&nbsp;{e.node.frontmatter.title}</a></p>
+                    <p><small style={{fontSize: 16, color: "slategray", fontWeight: "lighter"}}>Posted on: {new Date(e.node.frontmatter.date).toDateString()}</small></p>  
+                  </a>
+                  <hr/>
+                </>
               ))
             }
           </div>

@@ -19,12 +19,6 @@ const links = [
       "I randomly post code / tech related videos on Odysee.",
   },
   {
-    text: "Blog",
-    url: "/blog",
-    description:
-      "I also try to maintain a blog, usually focusing on code and projects im working on.",
-  },
-  {
     text: "Downloads",
     url: "/downloads",
     description:

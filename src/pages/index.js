@@ -24,6 +24,12 @@ const links = [
     description:
       "Public downloads page.",
   },
+  {
+    text: "Contact Information",
+    url: "mailto:joshyburnss@gmail.com",
+    description:
+      "Get in touch, Business enquiries, Support requests, and personal communiqués are all welcome via email.",
+  },
 ]
 
 const IndexPage = () => (

@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `joshburns-xyz-personal-webpage`,
-        short_name: `joshburnsxyz`,
+        name: `JoshBurnsXYZ`,
+        short_name: `JoshBurnsXYZ`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

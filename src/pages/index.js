@@ -26,8 +26,6 @@ const links = [
   },
 ]
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
@@ -50,7 +48,7 @@ const IndexPage = () => (
         <li key={link.url} className={styles.listItem}>
           <a
             className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
+            href={`${link.url}`}
           >
             {link.text} ↗
           </a>

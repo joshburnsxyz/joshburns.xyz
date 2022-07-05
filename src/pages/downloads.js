@@ -5,6 +5,15 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
+
+const links = [
+  {
+    text: "laptop.sh",
+    url: "https://raw.githubusercontent.com/joshburnsxyz/scripts/main/laptop.sh",
+    description: "script to provision new machines (MacOS)"
+  },
+]
+
 const DownloadsPage = () => {
   return (
     <Layout>
@@ -19,17 +28,18 @@ const DownloadsPage = () => {
           alt=""
           style={{ marginBottom: `var(--space-3)` }}
         />
-        <h1>
-          Downloads
-          <br/>
-          <br/>
-          <hr/>
-          <div>
-            <ul>
-              <li><a href="/"><pre><code>laptop.sh</code></pre> script to provision new machines (MacOS)</a></li>
-            </ul>
-          </div>
-        </h1>
+        <h1>Downloads</h1>
+        <br/>
+        <br/>
+        <hr/>
+        <div>
+          <ul>
+            
+            {links.map(link => (
+              <li><a href={link.url}><pre><code>{link.text}</code></pre>{link.description}</a></li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Layout>
   )

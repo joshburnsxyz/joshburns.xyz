@@ -12,12 +12,17 @@ const links = [
     url: "https://raw.githubusercontent.com/joshburnsxyz/scripts/main/laptop.sh",
     description: "script to provision new machines (MacOS)"
   },
+  {
+    text: "reindent-buffer.el",
+    url: "https://raw.githubusercontent.com/joshburnsxyz/reindent-buffer.el/main/reindent-buffer.el",
+    description: "Emacs plugin to quickly re-indent the active Emacs buffer."
+  },
 ]
 
 const DownloadsPage = () => {
   return (
     <Layout>
-      <Seo title="Blog" />
+      <Seo title="Downloads" />
       <div className={styles.textCenter}>
         <StaticImage
           src="../images/example.png"
@@ -33,8 +38,7 @@ const DownloadsPage = () => {
         <br/>
         <hr/>
         <div>
-          <ul>
-            
+          <ul>    
             {links.map(link => (
               <li><a href={link.url}><pre><code>{link.text}</code></pre>{link.description}</a></li>
             ))}

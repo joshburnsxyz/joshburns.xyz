@@ -38,7 +38,7 @@ const DownloadsPage = () => {
         <br/>
         <hr/>
         <div>
-          <ul>    
+          <ul className={styles.downloadsList}>    
             {links.map(link => (
               <li><a href={link.url}><pre><code>{link.text}</code></pre>{link.description}</a></li>
             ))}
